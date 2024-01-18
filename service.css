@@ -1,0 +1,101 @@
+.expandable-div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 100px;
+}
+
+.expanded {
+    height: auto;
+    overflow: visible;
+}
+
+.collapsed {
+    height: 70px;
+    overflow: hidden;
+}
+
+.expand-icon::after {
+    content: ' +';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.collapse-icon::after {
+    content: ' -';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.expandable-div h3 {
+    padding: 10px;
+    margin: 0;
+}
+
+.expandable-div p {
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.orange-background {
+    background-color: orange;
+}
+.card-cover {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(221, 124, 4, 0.706); /* Light orange with 50% opacity */
+    z-index: 1;
+}
+
+.content-img {
+    width: 100%; /* Adjusted to the card width */
+    max-width: 100%;
+    height: auto;
+}
+/* header */
+.block {
+width: 100%;
+height: 500px;
+background-size: cover;
+background-image: url(Disle/Images/breadcrumb.jpg);
+}
+
+.wrapper {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+background:rgba(0, 0, 0, 0.185);
+opacity: 0.7;
+}
+
+.link {
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+padding: 12px 14px;
+font-size: 3rem;
+}
+.home{
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+padding: 12px 24px;
+font-size:x-large;
+}
